@@ -1,0 +1,33 @@
+body
+{
+	background-image: url(../images/background_image.jpg);
+}
+
+.record
+{
+	margin-left: 500px;
+	margin-top: 80px;	
+}
+.cd
+{
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.cd2
+{
+	margin-left: 400px;
+	margin-top: -180px;
+}
+
+.cd3
+{
+	margin-left: 750px;
+	margin-top: -180px;
+}
+
+.cd4
+{
+	margin-left: 1100px;
+	margin-top: -190px;
+}
