@@ -1,33 +1,158 @@
-body
-{
-	background-image: url(../images/background_image.jpg);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  background-image:url(../images/background.jpg);
+  background-repeat:no-repeat;
+  background-color: #000;
+  background-position: center 0;
+  background-attachment: fixed;
 }
 
-.record
-{
-	margin-left: 500px;
-	margin-top: 80px;	
-}
-.cd
-{
-	margin-top: 50px;
-	margin-left: 100px;
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
 }
 
-.cd2
-{
-	margin-left: 400px;
-	margin-top: -180px;
+.hidden { display: none; }
+
+.title {
+  color: white;
+  font-size: 90px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-left: 350px;
 }
 
-.cd3
-{
-	margin-left: 750px;
-	margin-top: -180px;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.cd4
-{
-	margin-left: 1100px;
-	margin-top: -190px;
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+
 }
+
+.line {
+  width: 100%;
+  height: 10px;
+  background-color: #727070;
+  opacity: 70%;
+}
+
+
+/* Drop Area */
+
+.dropContainer {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.dropZone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 52%;
+  margin-left: 340px;
+}
+
+
+
+.dropMusic {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 30%;
+	height: 190px;
+	margin: 10px 0;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+  position: relative;
+	justify-content: flex-end;
+}
+
+.loading {
+	opacity: .8;
+	position: relative;
+}
+
+.loading p {
+	display: block;
+	position: absolute;
+	left: 10px;
+	color: pink;
+	text-align: center;
+	line-height: 14px;
+}
+
+.pause {
+	font-size: 48px;
+	color: white;
+	position: absolute;
+  text-align: center;
+  right: 10px;
+	top: -10px;
+  opacity: 0;
+}
+.line1 {
+  width: 100%;
+  height: 10px;
+  background-color: #727070;
+  opacity: 70%;
+  margin-top: 20px;
+}
+
+.dropMusic img {
+  height: 100%;
+}
+
+.dropItem:hover .stop {
+	cursor: pointer;
+	opacity: .6;
+}
+
+
+.information {
+  	text-align: center;
+  	margin-bottom: 20px;
+  }
+
+.music {
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	margin: 0 0 -20px -20px;
+  }
+
+  .icon {
+  	background-color: rgba(255, 255, 255, 0.5);
+  	width: 120px;
+  	height: 120px;
+  	border-radius: 10px;
+  	display:flex;
+  	justify-content: center;
+  	align-items: center;
+    margin-right: 70px;
+    margin-top: 50px;
+  }
+
+  .icon img {
+  	width: 100%;
+  }
+
+  .icon:hover {
+  	cursor: pointer;
+  }
